@@ -1,0 +1,230 @@
+.mainhome{
+    padding: 20px;
+}
+
+.hero_story{
+    height:600px;
+}
+
+.hero_story img{
+    height: 100%;
+    width: 100%;
+}
+
+.hero {
+    height: 500px;
+    background-image: url("img/splash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.hero-title { 
+    font-size: 9vh; 
+    font-size: 3em;
+    color:aliceblue;
+}
+.button { 
+    font-size: 3vh;
+ }
+.card{
+    padding: 10px; 
+}
+.addtocart_detailed{
+    margin-left: 20%;
+    margin-right: 20%;
+    border-style:ridge;
+   
+}
+.addtocart_title{
+    text-align: center;
+    background-color:gray;
+    
+}
+.grid_for_3_elements{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 0px;
+}
+.addtocart_image{
+   
+    height: 200px;
+     
+}
+.addtocart_pricing{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.color_select{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  
+}
+.col1{
+background-color:black;
+color: aliceblue;
+text-align: center;
+}
+.col2{
+background-color:yellow;
+text-align: center;
+}
+.col3{
+background-color:green;
+color: antiquewhite;
+text-align: center;
+}
+.addtcart_payment{
+    padding-left: 10px;
+    height: 200px;
+   
+}
+.addtocart_pdetails{
+    
+    height: 200px;
+    
+}
+.addtocart_footer{
+    text-align: center;
+    background-color: black;
+    bottom: 0;
+    color: white; 
+}
+
+
+h1 {
+    text-align: center;
+  }
+
+h2{
+    text-align: center;
+}
+  
+  /* Sets the width for the accordion. Sets the margin to 90px on the top and bottom and auto to the left and right */
+  
+  .accordion {
+    width: 800px;
+    margin: 90px auto;
+    color: black;
+    background-color: white;
+    padding: 45px 45px;
+  }
+
+  .accordion .container {
+    position: relative;
+    margin: 10px 10px;
+  }
+  
+  /* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
+  
+  .accordion .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+  }
+  .accordion .label::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+  
+  /* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+  
+  .accordion .content {
+    position: relative;
+    background: white;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 780px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  /* Adds a horizontal line between the contents */
+  
+  .accordion hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid grey;
+  }
+  /* Unhides the content part when active. Sets the height */
+
+.accordion .container.active .content {
+    height: 150px;
+  }
+  
+  /* Changes from plus sign to negative sign once active */
+  
+  .accordion .container.active .label::before {
+    content: '-';
+    font-size: 30px;
+  }
+
+  .carousel {
+    width: 100vw;
+    height: 200px;
+  }
+  
+  @keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+  
+  .carousel {
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    margin-top: 10vh;
+  }
+  
+  .carousel > img {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 10s infinite;
+  }
+  
+  img:nth-child(2) {
+    animation-delay: 2s;
+  }
+  img:nth-child(3) {
+    animation-delay: 4s;
+  }
+  img:nth-child(4) {
+    animation-delay: 6s;
+  }
+  img:nth-child(5) {
+    animation-delay: 8s;
+  }
